@@ -1,6 +1,8 @@
-import 'colors.dart';
+
 import 'package:flutter/material.dart';
 
+import '../data/colors.dart';
+import 'faqs.dart';
 import 'statistics.dart';
 
 class MyMenu extends StatelessWidget {
@@ -43,6 +45,30 @@ class MyMenu extends StatelessWidget {
                 Navigator.of(context).pop();
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => Statistics()));
+              },
+            ),
+            Divider(),
+            ListTile(
+              contentPadding: EdgeInsets.symmetric(horizontal: 30),
+              leading: Icon(
+                Icons.lightbulb_outline,
+                color: Colors.white,
+              ),
+              trailing: Icon(
+                Icons.arrow_right,
+                color: Colors.white,
+              ),
+              title: Text(
+                "FAQs",
+                style: TextStyle(
+                  fontSize: 18.0,
+                  color: Colors.white,
+                ),
+              ),
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => FAQPage()));
               },
             ),
             Divider(),

@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'colors.dart';
+import 'data/colors.dart';
 
-import 'main_menu.dart';
+import 'pages/main_menu.dart';
 
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     theme: ThemeData(
-      // Define the default brightness and colors.
-      brightness: Brightness.dark,
+      brightness: Brightness.light,
       primaryColor: Color(black),
       accentColor: Color(offWhite),
       textTheme: TextTheme(
@@ -18,7 +17,7 @@ void main() {
           headline6: TextStyle(fontSize: 36.0, fontStyle: FontStyle.italic),
           bodyText2: GoogleFonts.firaSans(
             textStyle: TextStyle(
-                fontSize: 30.0, letterSpacing: .5, color: Color(black)),
+                fontSize: 20.0, letterSpacing: .5, color: Color(black)),
           )),
     ),
     home: MyApp(),
@@ -37,7 +36,7 @@ class MyApp extends StatelessWidget {
       ),
       body: Center(
         child: Text(
-          "Hello World",
+          "Be Safe Baliz",
         ),
       ),
     );
