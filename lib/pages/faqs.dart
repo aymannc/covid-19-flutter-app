@@ -7,7 +7,7 @@ class FAQPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(offWhite),
+      backgroundColor: Color(white),
       appBar: AppBar(
         title: Text('FAQs'),
       ),
