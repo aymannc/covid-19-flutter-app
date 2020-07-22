@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 
 import '../data/colors.dart';
+import 'approximite.dart';
 import 'faqs.dart';
 import 'statistics.dart';
 
@@ -72,6 +73,77 @@ class MyMenu extends StatelessWidget {
               },
             ),
             Divider(),
+            ListTile(
+              contentPadding: EdgeInsets.symmetric(horizontal: 30),
+              leading: Icon(
+                Icons.location_on,
+                color: Colors.white,
+              ),
+              trailing: Icon(
+                Icons.arrow_right,
+                color: Colors.white,
+              ),
+              title: Text(
+                "Nearby places",
+                style: TextStyle(
+                  fontSize: 18.0,
+                  color: Colors.white,
+                ),
+              ),
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Approximite()));
+              },
+            ),
+            Divider(),
+            ListTile(
+              contentPadding: EdgeInsets.symmetric(horizontal: 30),
+              leading: Icon(
+                Icons.camera_alt,
+                color: Colors.white,
+              ),
+              trailing: Icon(
+                Icons.arrow_right,
+                color: Colors.white,
+              ),
+              title: Text(
+                "QR code scanner",
+                style: TextStyle(
+                  fontSize: 18.0,
+                  color: Colors.white,
+                ),
+              ),
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => FAQPage()));
+              },
+            ),
+            Divider(),
+            ListTile(
+              contentPadding: EdgeInsets.symmetric(horizontal: 30),
+              leading: Icon(
+                Icons.local_hospital,
+                color: Colors.white,
+              ),
+              trailing: Icon(
+                Icons.arrow_right,
+                color: Colors.white,
+              ),
+              title: Text(
+                "Daily protection",
+                style: TextStyle(
+                  fontSize: 18.0,
+                  color: Colors.white,
+                ),
+              ),
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => FAQPage()));
+              },
+            ),
           ],
         ),
       ),

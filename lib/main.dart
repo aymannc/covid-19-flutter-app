@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
       ),
       body: Center(
         child: Text(
-          "Be Safe Baliz",
+          "Be Safe",
         ),
       ),
     );
