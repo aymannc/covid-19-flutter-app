@@ -1,7 +1,8 @@
-
+import 'package:covid19/pages/precautions.dart';
 import 'package:flutter/material.dart';
 
 import '../data/colors.dart';
+import 'QR.dart';
 import 'approximite.dart';
 import 'faqs.dart';
 import 'statistics.dart';
@@ -44,8 +45,7 @@ class MyMenu extends StatelessWidget {
               ),
               onTap: () {
                 Navigator.of(context).pop();
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Statistics()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Statistics()));
               },
             ),
             Divider(),
@@ -68,8 +68,7 @@ class MyMenu extends StatelessWidget {
               ),
               onTap: () {
                 Navigator.of(context).pop();
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => FAQPage()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => FAQPage()));
               },
             ),
             Divider(),
@@ -92,8 +91,7 @@ class MyMenu extends StatelessWidget {
               ),
               onTap: () {
                 Navigator.of(context).pop();
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Approximite()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Approximite()));
               },
             ),
             Divider(),
@@ -116,8 +114,7 @@ class MyMenu extends StatelessWidget {
               ),
               onTap: () {
                 Navigator.of(context).pop();
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => FAQPage()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => QRCodePage()));
               },
             ),
             Divider(),
@@ -140,8 +137,7 @@ class MyMenu extends StatelessWidget {
               ),
               onTap: () {
                 Navigator.of(context).pop();
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => FAQPage()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => PrecautionPage()));
               },
             ),
           ],
